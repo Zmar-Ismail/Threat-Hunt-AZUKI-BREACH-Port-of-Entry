@@ -70,7 +70,7 @@ DeviceLogonEvents
 
 ### Flag 2 — INITIAL ACCESS: Compromised User Account
 
-> Identifying which credentials were compromised determines the scope of unauthorised access and guides remediation efforts including password resets and privilege reviews.
+Identifying which credentials were compromised determines the scope of unauthorised access and guides remediation efforts including password resets and privilege reviews.
 
 **Answer:** `kenji.sato`
 
@@ -89,7 +89,7 @@ DeviceLogonEvents
 
 ### Flag 3 — DISCOVERY: Network Reconnaissance
 
-> Attackers enumerate network topology to identify lateral movement opportunities and high-value targets. This reconnaissance activity is a key indicator of advanced persistent threats.
+Attackers enumerate network topology to identify lateral movement opportunities and high-value targets. This reconnaissance activity is a key indicator of advanced persistent threats.
 
 **Answer:** `"ARP.EXE" -a`
 
@@ -108,7 +108,7 @@ DeviceProcessEvents
 
 ### Flag 4 — DEFENCE EVASION: Malware Staging Directory
 
-> Attackers establish staging locations to organise tools and stolen data. Identifying these directories reveals the scope of compromise and helps locate additional malicious artefacts.
+Attackers establish staging locations to organise tools and stolen data. Identifying these directories reveals the scope of compromise and helps locate additional malicious artefacts.
 
 **Answer:** `C:\ProgramData\WindowsCache`
 
@@ -129,7 +129,7 @@ DeviceProcessEvents
 
 ### Flag 5 — DEFENCE EVASION: File Extension Exclusions
 
-> Attackers add file extension exclusions to Windows Defender to prevent scanning of malicious files. Counting these exclusions reveals the scope of the attacker's defense evasion strategy.
+Attackers add file extension exclusions to Windows Defender to prevent scanning of malicious files. Counting these exclusions reveals the scope of the attacker's defense evasion strategy.
 
 **Answer:** `3`
 
@@ -147,7 +147,7 @@ DeviceRegistryEvents
 
 ### Flag 6 — DEFENCE EVASION: Temporary Folder Exclusion
 
-> Attackers add folder path exclusions to Windows Defender to prevent scanning of directories used for downloading and executing malicious tools. These exclusions allow malware to run undetected.
+Attackers add folder path exclusions to Windows Defender to prevent scanning of directories used for downloading and executing malicious tools. These exclusions allow malware to run undetected.
 
 **Answer:** `C:\Users\KENJI~1.SAT\AppData\Local\Temp`
 
@@ -166,7 +166,7 @@ DeviceRegistryEvents
 
 ### Flag 7 — DEFENCE EVASION: Download Utility Abuse
 
-> Legitimate system utilities are often weaponized to download malware while evading detection. Identifying these techniques helps improve defensive controls.
+Legitimate system utilities are often weaponized to download malware while evading detection. Identifying these techniques helps improve defensive controls.
 
 **Answer:** `certutil.exe`
 
@@ -185,7 +185,7 @@ DeviceProcessEvents
 
 ### Flag 8 — PERSISTENCE: Scheduled Task Name
 
-> Scheduled tasks provide reliable persistence across system reboots. The task name often attempts to blend with legitimate Windows maintenance routines.
+Scheduled tasks provide reliable persistence across system reboots. The task name often attempts to blend with legitimate Windows maintenance routines.
 
 **Answer:** `Windows Update Check`
 
@@ -204,7 +204,7 @@ DeviceProcessEvents
 
 ### Flag 9 — PERSISTENCE: Scheduled Task Target
 
-> The scheduled task action defines what executes at runtime. This reveals the exact persistence mechanism and the malware location.
+The scheduled task action defines what executes at runtime. This reveals the exact persistence mechanism and the malware location.
 
 **Answer:** `C:\ProgramData\WindowsCache\svchost.exe`
 
@@ -223,7 +223,7 @@ DeviceProcessEvents
 
 ### Flag 10 — C2 Server IP
 
-> Command and control infrastructure allows attackers to remotely control compromised systems. Identifying C2 servers enables network blocking and infrastructure tracking.
+Command and control infrastructure allows attackers to remotely control compromised systems. Identifying C2 servers enables network blocking and infrastructure tracking.
 
 **Answer:** `78.141.196.6`
 
@@ -242,7 +242,7 @@ DeviceNetworkEvents
 
 ### Flag 11 — COMMAND & CONTROL: C2 Communication Port
 
-> C2 communication ports can indicate the framework or protocol used. This information supports network detection rules and threat intelligence correlation.
+C2 communication ports can indicate the framework or protocol used. This information supports network detection rules and threat intelligence correlation.
 
 **Answer:** `443`
 
@@ -261,7 +261,7 @@ DeviceNetworkEvents
 
 ### Flag 12 — CREDENTIAL ACCESS: Credential Theft Tool
 
-> Credential dumping tools extract authentication secrets from system memory. These tools are typically renamed to avoid signature-based detection.
+Credential dumping tools extract authentication secrets from system memory. These tools are typically renamed to avoid signature-based detection.
 
 **Answer:** `mm.exe`
 
@@ -281,7 +281,7 @@ DeviceFileEvents
 
 ### Flag 13 — CREDENTIAL ACCESS: Memory Extraction Module
 
-> Credential dumping tools use specific modules to extract passwords from security subsystems. Documenting the exact technique used aids in detection engineering.
+Credential dumping tools use specific modules to extract passwords from security subsystems. Documenting the exact technique used aids in detection engineering.
 
 **Answer:** `sekurlsa::logonpasswords`
 
@@ -299,7 +299,7 @@ DeviceProcessEvents
 
 ### Flag 14 — COLLECTION: Data Staging Archive
 
-> Attackers compress stolen data for efficient exfiltration. The archive filename often includes dates or descriptive names for the attacker's organisation.
+Attackers compress stolen data for efficient exfiltration. The archive filename often includes dates or descriptive names for the attacker's organisation.
 
 **Answer:** `export-data.zip`
 
@@ -319,7 +319,7 @@ DeviceFileEvents
 
 ### Flag 15 — EXFILTRATION: Exfiltration Channel
 
-> Cloud services with upload capabilities are frequently abused for data theft. Identifying the service helps with incident scope determination and potential data recovery.
+Cloud services with upload capabilities are frequently abused for data theft. Identifying the service helps with incident scope determination and potential data recovery.
 
 **Answer:** `discord`
 
@@ -338,7 +338,7 @@ DeviceNetworkEvents
 
 ### Flag 16 — ANTI-FORENSICS: Log Tampering
 
-> Clearing event logs destroys forensic evidence and impedes investigation efforts. The order of log clearing can indicate attacker priorities and sophistication.
+Clearing event logs destroys forensic evidence and impedes investigation efforts. The order of log clearing can indicate attacker priorities and sophistication.
 
 **Answer:** `Security`
 
@@ -360,7 +360,7 @@ DeviceProcessEvents
 
 ### Flag 17 — IMPACT: Persistence Account
 
-> Hidden administrator accounts provide alternative access for future operations. These accounts are often configured to avoid appearing in normal user interfaces.
+Hidden administrator accounts provide alternative access for future operations. These accounts are often configured to avoid appearing in normal user interfaces.
 
 **Answer:** `support`
 
@@ -379,7 +379,7 @@ DeviceProcessEvents
 
 ### Flag 18 — EXECUTION: Malicious Script
 
-> Attackers often use scripting languages to automate their attack chain. Identifying the initial attack script reveals the entry point and automation method used in the compromise.
+Attackers often use scripting languages to automate their attack chain. Identifying the initial attack script reveals the entry point and automation method used in the compromise.
 
 **Answer:** `wupdate.ps1`
 
@@ -400,7 +400,7 @@ DeviceFileEvents
 
 ### Flag 19 — LATERAL MOVEMENT: Secondary Target
 
-> Lateral movement targets are selected based on their access to sensitive data or network privileges. Identifying these targets reveals attacker objectives.
+Lateral movement targets are selected based on their access to sensitive data or network privileges. Identifying these targets reveals attacker objectives.
 
 **Answer:** `10.1.0.188`
 
@@ -418,7 +418,7 @@ DeviceProcessEvents
 
 ### Flag 20 — LATERAL MOVEMENT: Remote Access Tool
 
-> Built-in remote access tools are preferred for lateral movement as they blend with legitimate administrative activity. This technique is harder to detect than custom tools.
+Built-in remote access tools are preferred for lateral movement as they blend with legitimate administrative activity. This technique is harder to detect than custom tools.
 
 **Answer:** `mstsc.exe`
 
