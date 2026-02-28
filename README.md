@@ -82,8 +82,8 @@ DeviceLogonEvents
 | project Timestamp, DeviceName, AccountDomain, AccountName, RemoteDeviceName
 ```
 
-**Screenshot:**  
-![Flag 2 Screenshot](<img width="835" height="158" alt="image" src="https://github.com/user-attachments/assets/53cca96a-ad23-4fd7-b9ef-82fb76b2ea12" /> )
+<img width="835" height="157" alt="image" src="https://github.com/user-attachments/assets/710b09ac-f317-4edf-b420-6e58175f28a4" />
+
 
 ---
 
@@ -101,8 +101,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, FileName, ProcessCommandLine, AccountName
 ```
 
-**Screenshot:**  
-![Flag 3 Screenshot](image)
+<img width="800" height="230" alt="image" src="https://github.com/user-attachments/assets/3b1e99a4-68d2-4954-9aa9-fc51225fcfb0" />
+
 
 ---
 
@@ -122,8 +122,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, FileName, ProcessCommandLine
 ```
 
-**Screenshot:**  
-![Flag 4 Screenshot](image)
+<img width="838" height="106" alt="image" src="https://github.com/user-attachments/assets/f8ef05df-000b-4358-abdf-0e75082c1934" />
+
 
 ---
 
@@ -141,8 +141,7 @@ DeviceRegistryEvents
 | project Timestamp, DeviceName, RegistryKey, RegistryValueName
 ```
 
-**Screenshot:**  
-![Flag 5 Screenshot](image)
+<img width="833" height="106" alt="image" src="https://github.com/user-attachments/assets/667ad806-d758-4da2-942f-a5060b025e36" />
 
 ---
 
@@ -160,8 +159,8 @@ DeviceRegistryEvents
 | project Timestamp, DeviceName, RegistryKey, RegistryValueName
 ```
 
-**Screenshot:**  
-![Flag 6 Screenshot](image)
+<img width="833" height="202" alt="image" src="https://github.com/user-attachments/assets/a9b9faa4-5f25-48fa-9ff3-6f7ea0aa51cb" />
+
 
 ---
 
@@ -179,8 +178,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, ProcessCommandLine, FileName
 ```
 
-**Screenshot:**  
-![Flag 7 Screenshot](image)
+<img width="837" height="214" alt="image" src="https://github.com/user-attachments/assets/6c58dcaa-34ab-44b3-90be-a84ff655432f" />
+
 
 ---
 
@@ -198,8 +197,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, FileName, ProcessCommandLine
 ```
 
-**Screenshot:**  
-![Flag 8 Screenshot](image)
+<img width="836" height="151" alt="image" src="https://github.com/user-attachments/assets/2160600e-a17b-4bbf-a1bb-967e5a74a07e" />
+
 
 ---
 
@@ -217,8 +216,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, FileName, ProcessCommandLine
 ```
 
-**Screenshot:**  
-![Flag 9 Screenshot](image)
+<img width="838" height="159" alt="image" src="https://github.com/user-attachments/assets/009bb8eb-4139-4538-8c35-440743d2aaf6" />
+
 
 ---
 
@@ -236,8 +235,8 @@ DeviceNetworkEvents
 | project Timestamp, DeviceName, RemoteIP, InitiatingProcessFileName
 ```
 
-**Screenshot:**  
-![Flag 10 Screenshot](image)
+<img width="699" height="199" alt="image" src="https://github.com/user-attachments/assets/8fc4657c-2838-4474-95f2-6efd61ef116a" />
+
 
 ---
 
@@ -255,8 +254,8 @@ DeviceNetworkEvents
 | project Timestamp, DeviceName, RemoteIP, RemotePort, InitiatingProcessFileName
 ```
 
-**Screenshot:**  
-![Flag 11 Screenshot](image)
+<img width="838" height="275" alt="image" src="https://github.com/user-attachments/assets/a2f60c5c-07e1-4df2-b500-af2eff192399" />
+
 
 ---
 
@@ -275,8 +274,8 @@ DeviceFileEvents
 | project Timestamp, DeviceName, FileName, FolderPath
 ```
 
-**Screenshot:**  
-![Flag 12 Screenshot](image)
+<img width="725" height="242" alt="image" src="https://github.com/user-attachments/assets/de797965-ddb3-49c2-8586-5ba03e4d9f50" />
+
 
 ---
 
@@ -293,8 +292,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, FileName, ProcessCommandLine
 ```
 
-**Screenshot:**  
-![Flag 13 Screenshot](image)
+<img width="700" height="205" alt="image" src="https://github.com/user-attachments/assets/476db558-c2d7-4dba-88fa-b2d9183ddb67" />
+
 
 ---
 
@@ -313,8 +312,8 @@ DeviceFileEvents
 | project Timestamp, DeviceName, FileName, FolderPath
 ```
 
-**Screenshot:**  
-![Flag 14 Screenshot](image)
+<img width="713" height="206" alt="image" src="https://github.com/user-attachments/assets/c4276fc4-96ef-41fa-9e18-0f92cc13d740" />
+
 
 ---
 
@@ -332,8 +331,8 @@ DeviceNetworkEvents
 | project Timestamp, DeviceName, RemoteUrl, InitiatingProcessCommandLine
 ```
 
-**Screenshot:**  
-![Flag 15 Screenshot](image)
+<img width="779" height="269" alt="image" src="https://github.com/user-attachments/assets/4ccbd88a-021a-496a-bae1-9b6966f4be61" />
+
 
 ---
 
@@ -354,8 +353,8 @@ DeviceProcessEvents
 | limit 1
 ```
 
-**Screenshot:**  
-![Flag 16 Screenshot](image)
+<img width="732" height="207" alt="image" src="https://github.com/user-attachments/assets/0ab0a680-e823-4182-858d-5f548e1d65d3" />
+
 
 ---
 
@@ -373,8 +372,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, FileName, ProcessCommandLine
 ```
 
-**Screenshot:**  
-![Flag 17 Screenshot](image)
+<img width="836" height="162" alt="image" src="https://github.com/user-attachments/assets/b2b57529-3c4a-4fd0-b60a-0a2fb2f5c1da" />
+
 
 ---
 
@@ -394,8 +393,8 @@ DeviceFileEvents
 | project Timestamp, DeviceName, FileName, InitiatingProcessCommandLine
 ```
 
-**Screenshot:**  
-![Flag 18 Screenshot](image)
+<img width="837" height="148" alt="image" src="https://github.com/user-attachments/assets/ac806071-f853-4224-8448-cef5750b879e" />
+
 
 ---
 
@@ -412,8 +411,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, FileName, ProcessCommandLine
 ```
 
-**Screenshot:**  
-![Flag 19 Screenshot](image)
+<img width="830" height="219" alt="image" src="https://github.com/user-attachments/assets/28e57121-5035-4846-9d27-0da6ee854778" />
+
 
 ---
 
@@ -430,8 +429,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, FileName, ProcessCommandLine
 ```
 
-**Screenshot:**  
-![Flag 20 Screenshot](image)
+<img width="836" height="221" alt="image" src="https://github.com/user-attachments/assets/0cfaa16c-4f3e-4f01-8919-44b262784e70" />
+
 
 ---
 
