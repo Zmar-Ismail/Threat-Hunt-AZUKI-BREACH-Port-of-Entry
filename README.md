@@ -51,7 +51,7 @@ Azuki Import/Export was compromised via stolen credentials that permitted RDP ac
 
 ### Flag 1 — INITIAL ACCESS: Remote Access Source
 
-> Remote Desktop Protocol connections leave network traces that identify the source of unauthorized access. Determining the origin helps with threat actor attribution and blocking ongoing attacks.
+Remote Desktop Protocol connections leave network traces that identify the source of unauthorized access. Determining the origin helps with threat actor attribution and blocking ongoing attacks.
 
 **Answer:** `88.97.178.12`
 
@@ -63,8 +63,8 @@ DeviceLogonEvents
 | project Timestamp, DeviceName, ActionType, AccountName, RemoteDeviceName, RemoteIP
 ```
 
-**Screenshot:**  
-![Flag 1 Screenshot](<img width="838" height="312" alt="image" src="https://github.com/user-attachments/assets/ac473127-0d3b-45f2-a72c-0d5348836107" /> )
+<img width="835" height="307" alt="image" src="https://github.com/user-attachments/assets/a7cb2ea1-76e7-4164-a190-8bf33dc542f4" />
+
 
 ---
 
